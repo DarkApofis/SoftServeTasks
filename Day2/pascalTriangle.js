@@ -17,5 +17,3 @@ function pascal(depth) {
     }
     return pascalTri
 }
-  
-console.log(pascal(3))

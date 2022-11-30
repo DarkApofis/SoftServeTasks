@@ -17,5 +17,3 @@ function moveZeros(arr) {
 //     const zeros = arr.filter(item => item === 0)
 //     return arr.filter(item => item !== 0).concat(zeros)
 // }
-
-console.log(moveZeros([false,1,0,1,2,0,1,3,"a"]))
