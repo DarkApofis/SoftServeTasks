@@ -10,7 +10,7 @@ let meeting = (meetRooms, chairsNeeded) =>{
     const spareChairs = []
     
     for(let i = 0; i < avalCha.length; i++){
-        if(totalSparedChairs === chairsNeeded) return spareChairs
+        if(totalSparedChairs === chairsNeeded) break
         totalSparedChairs += avalCha[i]
         spareChairs.push(avalCha[i])
     }
