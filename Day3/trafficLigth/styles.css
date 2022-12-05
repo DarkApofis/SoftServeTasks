@@ -20,6 +20,7 @@ main{
     height: 100px;
     background-color: #B4D8F2;
     border-radius: 5px;
+    box-shadow: 3px 3px #233143;
 }
 
 ul{
@@ -54,14 +55,6 @@ button{
     cursor: pointer;
 }
 
-.greenLight{
+.green{
     background-color: #B4E59B;
-}
-
-.yellowLight{
-    background-color: #FFEA8A;
-}
-
-.redLight{
-    background-color: #F0A29A;
 }
