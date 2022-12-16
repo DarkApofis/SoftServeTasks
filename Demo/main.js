@@ -7,7 +7,7 @@ import fib from './src/task7.js';
 
 //----------------TASK 1----------------//
 
-// console.log(chessBoard(4, 5, '*'));
+console.log(chessBoard(4, 5, '*'));
 // console.log(chessBoard(6, 6, '*'));
 // console.log(chessBoard());
 // console.log(chessBoard('four', 'three', '*'));
@@ -117,10 +117,10 @@ import fib from './src/task7.js';
 
 //----------------TASK 7----------------//
 
-const rules = {
-    min: 28,
-    max: 200,
-    length: 200,
-};
+// const rules = {
+//     min: 28,
+//     max: 200,
+//     length: 200,
+// };
 
-console.log(fib(rules));
+// console.log(fib(rules));
