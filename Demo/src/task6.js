@@ -22,7 +22,7 @@ function numericSequence(length, minSquare) {
     return numberSerie.join(', ');
 }
 
-module.exports = numericSequence;
+export default numericSequence;
 
 // console.log(numericSequence(6, 16));
 // console.log(numericSequence(2, 4));

@@ -22,13 +22,13 @@ function fib(constraints) {
     if (a >= min) fiboArray.push(a);
     if (b >= min) fiboArray.push(b);
 
-    for (let i = 3; fiboArray.length < length; i++) {
+    while (fiboArray.length < length) {
         let c = a + b;
         a = b;
         b = c;
         if (c >= min && c <= max) {
             fiboArray.push(c);
-        } else {
+        } else if (c > max) {
             return fiboArray;
         }
     }
@@ -36,8 +36,12 @@ function fib(constraints) {
     return fiboArray;
 }
 
-const rules = {
-    min: 1,
-    max: 150,
-    length: 100,
-};
+export default fib;
+
+// const rules = {
+//     min: 1,
+//     max: 2000,
+//     length: 5,
+// };
+
+// console.log(fib(rules));

@@ -1,5 +1,5 @@
-const assert = require('assert');
-const envelopeAnalysis = require('../src/task2');
+import { deepEqual } from 'assert';
+import envelopeAnalysis from '../src/task2.js';
 
 describe('Envelope Analysis', function () {
     it('envelopes with sides (5, 5) and (4, 4) should return (5, 5)', function () {
@@ -14,7 +14,7 @@ describe('Envelope Analysis', function () {
         };
 
         const result = envelopeAnalysis(envelopeA, envelopeB);
-        assert.deepEqual(result, envelopeA);
+        deepEqual(result, envelopeA);
     });
 
     it('envelopes with sides (10, 20) and (2, 1) should return (10, 20)', function () {
@@ -29,7 +29,7 @@ describe('Envelope Analysis', function () {
         };
 
         const result = envelopeAnalysis(envelopeA, envelopeB);
-        assert.deepEqual(result, envelopeA);
+        deepEqual(result, envelopeA);
     });
 
     it('envelopes with equal sides', function () {
@@ -44,7 +44,7 @@ describe('Envelope Analysis', function () {
         };
 
         const result = envelopeAnalysis(envelopeA, envelopeB);
-        assert.deepEqual(result, 0);
+        deepEqual(result, 0);
     });
 
     it("envelopes that can't be enclosed", function () {
@@ -59,7 +59,7 @@ describe('Envelope Analysis', function () {
         };
 
         const result = envelopeAnalysis(envelopeA, envelopeB);
-        assert.deepEqual(result, 0);
+        deepEqual(result, 0);
     });
 
     it('envelopes with sides lower than 1', function () {
@@ -74,7 +74,7 @@ describe('Envelope Analysis', function () {
         };
 
         const result = envelopeAnalysis(envelopeA, envelopeB);
-        assert.deepEqual(result, {
+        deepEqual(result, {
             state: 'failed',
             reason: 'The envelope sides should be greater than 0',
         });
@@ -82,7 +82,7 @@ describe('Envelope Analysis', function () {
 
     it('the user does not send the envelopes', function () {
         const result = envelopeAnalysis();
-        assert.deepEqual(result, {
+        deepEqual(result, {
             status: 'failed',
             reason: 'You need to send two envelopes with his sides',
         });

@@ -34,4 +34,4 @@ function palindrome(number) {
     return 0;
 }
 
-module.exports = palindrome;
+export default palindrome;

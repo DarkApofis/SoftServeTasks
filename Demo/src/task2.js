@@ -29,6 +29,8 @@ function envelopeAnalysis(sidesA, sidesB) {
     return 0;
 }
 
+export default envelopeAnalysis;
+
 // const envelopeA = {
 //     a: 5,
 //     b: 5,
@@ -38,10 +40,6 @@ function envelopeAnalysis(sidesA, sidesB) {
 //     a: 4,
 //     b: 6,
 // };
-
-console.log(envelopeAnalysis());
-
-module.exports = envelopeAnalysis;
 
 // const envelopeA2 = {
 //     a: 5,

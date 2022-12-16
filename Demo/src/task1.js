@@ -32,4 +32,9 @@ function chessBoard(length, width, char = '*') {
     return chessDisplay.trim();
 }
 
-module.exports = chessBoard;
+export default chessBoard;
+
+// console.log(chessBoard(4, 5, '*'));
+// console.log(chessBoard(4, '5', '*'));
+// console.log(chessBoard(4, -1, '*'));
+// console.log(chessBoard());

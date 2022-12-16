@@ -1,5 +1,5 @@
-const assert = require('assert');
-const sortingTriangles = require('../src/task3');
+import { deepEqual } from 'assert';
+import sortingTriangles from '../src/task3.js';
 
 describe('Sorting Triangles', function () {
     it('Should sort triangles by his area in descending order', function () {
@@ -18,7 +18,7 @@ describe('Sorting Triangles', function () {
             },
         ];
         const result = sortingTriangles(triangles);
-        assert.deepEqual(result, [
+        deepEqual(result, [
             {
                 vertices: 'ABC',
                 a: 10,
@@ -55,7 +55,7 @@ describe('Sorting Triangles', function () {
             },
         ];
         const result = sortingTriangles(triangles);
-        assert.deepEqual(result, [
+        deepEqual(result, [
             {
                 vertices: 'DEF',
                 d: 30,

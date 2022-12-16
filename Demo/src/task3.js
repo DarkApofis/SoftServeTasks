@@ -20,4 +20,4 @@ function sortingTriangles(arrayOfTriangles) {
     });
 }
 
-module.exports = sortingTriangles;
+export default sortingTriangles;
