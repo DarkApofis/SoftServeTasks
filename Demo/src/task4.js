@@ -18,8 +18,7 @@ function palindrome(number) {
         posiblePalindrome = '';
         for (let j = 1; j < number.toString().length; j++) {
             if (posiblePalindrome === '') {
-                posiblePalindrome +=
-                    number.toString()[i] + number.toString()[i + 1];
+                posiblePalindrome += number.toString()[i] + number.toString()[i + 1];
                 reversedNumber = posiblePalindrome.split('').reverse().join('');
                 if (posiblePalindrome === reversedNumber)
                     return posiblePalindrome;

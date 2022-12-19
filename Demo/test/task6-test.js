@@ -24,7 +24,7 @@ describe('Numeric Sequence', function () {
         const result = numericSequence();
         deepEqual(result, {
             status: 'failed',
-            reason: 'You need to pass the amount of number that you want and a minimun square',
+            reason: 'You need to pass the amount of numbers that you want and a minimun square number',
         });
     });
 });

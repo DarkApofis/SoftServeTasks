@@ -1,11 +1,25 @@
 function fib(constraints) {
-    const [min, max, length] = [...Object.values(constraints)];
+    const [min, max, length] = Object.values(constraints);
 
     if (!min || !max || !length) {
         return {
             status: 'failed',
-            reason: 'a constraint field is missing',
+            reason: 'A constraint field is missing',
         };
+    }
+
+    if([min, max, length].some(item => typeof item !== 'number')){
+        return {
+            status: 'failed',
+            reason: 'Constraints fields should be numbers'
+        }
+    }
+
+    if(min >= max){
+        return {
+            status: 'failed',
+            reason: 'Min constraint should be lower than max constraint'
+        }
     }
 
     if (min < 1 || max < 1 || length < 1) {
@@ -44,4 +58,4 @@ export default fib;
 //     length: 5,
 // };
 
-// console.log(fib(rules));
+// console.log(fib({a: 5, b: 1, c: 2000}));

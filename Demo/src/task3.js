@@ -1,7 +1,13 @@
 function sortingTriangles(arrayOfTriangles) {
+
+    if(!Array.isArray(arrayOfTriangles)) return {
+        state: 'failed',
+        reason: 'You should send an array of triangle objects'
+    }
+
     return arrayOfTriangles.sort((a, b) => {
-        const [vertices1, a1, b1, c1] = [...Object.values(a)];
-        const [vertices2, a2, b2, c2] = [...Object.values(b)];
+        const [vertices1, a1, b1, c1] = Object.values(a);
+        const [vertices2, a2, b2, c2] = Object.values(b);
 
         const semPerA = (a1 + b1 + c1) / 2;
         const semPerB = (a2 + b2 + c2) / 2;
