@@ -3,7 +3,7 @@ import chessBoard from '../src/task1.js';
 
 describe('Chest Board', function () {
     it('should a chess board with heigth 4 and weigth 5', function () {
-        equal(chessBoard(4, 5, '*'), '*****\n *****\n*****\n *****');
+        equal(chessBoard(4, 5, '*'), '*****\n *****\n*****\n ****');
     });
 
     it('should a chess board with heigth 2 and weigth 2', function () {

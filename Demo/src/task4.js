@@ -13,7 +13,7 @@ function palindrome(number) {
     }
 
     if (posiblePalindrome === reversedNumber) return number;
-
+    
     for (let i = 0; i < number.toString().length - 1; i++) {
         posiblePalindrome = '';
         for (let j = 1; j < number.toString().length; j++) {
@@ -34,3 +34,5 @@ function palindrome(number) {
 }
 
 export default palindrome;
+
+console.log(palindrome(1234437))

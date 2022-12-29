@@ -37,9 +37,11 @@ export default envelopeAnalysis;
 // };
 
 // const envelopeB = {
-//     a: 5.5,
+//     a: 5,
 //     b: 6,
 // };
+
+// console.log(envelopeAnalysis(envelopeA, envelopeB))
 
 // const envelopeA2 = {
 //     a: 5,
@@ -53,14 +55,14 @@ export default envelopeAnalysis;
 
 // console.log(envelopeAnalysis(envelopeA2, envelopeB2));
 
-// const envelopeA3 = {
-//     a: 4,
-//     b: 4,
-// };
+const envelopeA3 = {
+    a: 10,
+    b: 6,
+};
 
-// const envelopeB3 = {
-//     a: 5,
-//     b: 5,
-// };
+const envelopeB3 = {
+    a: 5,
+    b: 5,
+};
 
-// console.log(envelopeAnalysis(envelopeA3, envelopeB3));
+console.log(envelopeAnalysis(envelopeA3, envelopeB3));

@@ -26,4 +26,42 @@ function sortingTriangles(arrayOfTriangles) {
     });
 }
 
+const triangles1 = [
+    {
+        vertices: 'ABC',
+        a: 10,
+        b: 20,
+        c: 22.36,
+    },
+    {
+        vertices: 'TED',
+        t: 3,
+        e: 4,
+        d: 5,
+    },
+];
+
+const triangles2 = [
+    {
+        vertices: 'TED',
+        t: 3,
+        e: 4,
+        d: 5,
+    },
+    {
+        vertices: 'DEF',
+        d: 30,
+        e: 40.5,
+        f: 50,
+    },
+    {
+        vertices: 'ABC',
+        a: 10,
+        b: 20,
+        c: 22.36,
+    },
+];
+
+console.log(sortingTriangles(triangles2))
+
 export default sortingTriangles;

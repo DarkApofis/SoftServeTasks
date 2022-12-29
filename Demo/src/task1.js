@@ -34,7 +34,7 @@ function chessBoard(length, width, char = '*') {
 
 export default chessBoard;
 
-// console.log(chessBoard(4, 5, '*'));
-// console.log(chessBoard(4, '5', '*'));
+// console.log(chessBoard(4, 5, '+'));
+console.log(chessBoard(5, 10, '*'));
 // console.log(chessBoard(4, -1, '*'));
 // console.log(chessBoard());

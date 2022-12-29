@@ -52,10 +52,10 @@ function fib(constraints) {
 
 export default fib;
 
-// const rules = {
-//     min: 1,
-//     max: 2000,
-//     length: 5,
-// };
+const rules = {
+    min: 5,
+    max: 320,
+    length: 5,
+};
 
-// console.log(fib({a: 5, b: 1, c: 2000}));
+console.log(fib(rules));
